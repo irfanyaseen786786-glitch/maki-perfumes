@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Maki Perfumes Verification</title>
+    <style>
+        body { font-family: 'Georgia', serif; background-color: #f5f2ed; margin: 0; padding: 0; }
+        .container { max-width: 600px; margin: 40px auto; background-color: #ffffff; border-radius: 40px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
+        .header { background-color: #141414; padding: 40px; text-align: center; }
+        .header h1 { color: #ffffff; margin: 0; letter-spacing: 0.3em; text-transform: uppercase; font-size: 24px; }
+        .header h1 span { color: #D4AF37; }
+        .content { padding: 60px 40px; text-align: center; }
+        .content h2 { font-size: 32px; margin-bottom: 20px; color: #141414; }
+        .content p { color: #666666; line-height: 1.6; margin-bottom: 40px; }
+        .code-container { background-color: #f5f2ed; padding: 30px; border-radius: 20px; display: inline-block; margin-bottom: 40px; }
+        .code { font-size: 48px; font-weight: bold; letter-spacing: 10px; color: #D4AF37; font-family: monospace; }
+        .footer { padding: 40px; text-align: center; border-top: 1px solid #eeeeee; color: #999999; font-size: 12px; text-transform: uppercase; letter-spacing: 0.1em; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Maki <span>Perfumes</span></h1>
+        </div>
+        <div class="content">
+            <h2>Verify Your Identity</h2>
+            <p>Thank you for joining Maki Perfumes. To complete your registration and secure your account, please use the 8-digit verification code below.</p>
+            <div class="code-container">
+                <div class="code">{{ .Token }}</div>
+            </div>
+            <p>This code will expire in 10 minutes. If you did not request this, please ignore this email.</p>
+        </div>
+        <div class="footer">
+            &copy; 2026 Maki Perfumes | Bhatti Chowk, Lahore, Pakistan
+        </div>
+    </div>
+</body>
+</html>
